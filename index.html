@@ -1,121 +1,121 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>coisas</title>
+    <title>Formulário de Contato</title>
     <style>
-        body {
-          font-family: Arial, sans-serif;
-          margin: 0;
-          padding: 0;
-          background: linear-gradient(to right, #6a11cb, #2575fc);
-          color: #333;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          min-height: 100vh;
-        }
-    
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background: linear-gradient(to right, #6a11cb, #2575fc);
+        color: #333;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+      }
+
+      .container {
+        background: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        width: 90%;
+        max-width: 500px;
+      }
+
+      h2 {
+        text-align: center;
+        color: #2575fc;
+        margin-bottom: 20px;
+      }
+
+      form div {
+        margin-bottom: 15px;
+      }
+
+      label {
+        display: block;
+        font-weight: bold;
+        margin-bottom: 5px;
+      }
+
+      input[type="text"],
+      input[type="email"],
+      textarea {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        box-sizing: border-box;
+        transition: border-color 0.3s;
+      }
+
+      input:focus,
+      textarea:focus {
+        border-color: #2575fc;
+        outline: none;
+      }
+
+      button {
+        width: 100%;
+        padding: 10px;
+        background: #2575fc;
+        border: none;
+        color: #fff;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+      }
+
+      button:hover {
+        background: #6a11cb;
+      }
+
+      /* Responsividade */
+      @media (max-width: 600px) {
         .container {
-          background: #fff;
-          padding: 20px;
-          border-radius: 10px;
-          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-          width: 90%;
-          max-width: 500px;
+          padding: 15px;
         }
-    
+
         h2 {
-          text-align: center;
-          color: #2575fc;
-          margin-bottom: 20px;
+          font-size: 20px;
         }
-    
-        form div {
-          margin-bottom: 15px;
-        }
-    
-        label {
-          display: block;
-          font-weight: bold;
-          margin-bottom: 5px;
-        }
-    
-        input[type="text"], input[type="email"], textarea {
-          width: 100%;
-          padding: 10px;
-          border: 1px solid #ddd;
-          border-radius: 5px;
-          box-sizing: border-box;
-          transition: border-color 0.3s;
-        }
-    
-        input:focus, textarea:focus {
-          border-color: #2575fc;
-          outline: none;
-        }
-    
+
         button {
-          width: 100%;
-          padding: 10px;
-          background: #2575fc;
-          border: none;
-          color: #fff;
-          border-radius: 5px;
-          font-size: 16px;
-          cursor: pointer;
-          transition: background-color 0.3s;
+          font-size: 14px;
         }
-    
-        button:hover {
-          background: #6a11cb;
-        }
-    
-        /* Responsividade */
-        @media (max-width: 600px) {
-          .container {
-            padding: 15px;
-          }
-    
-          h2 {
-            font-size: 20px;
-          }
-    
-          button {
-            font-size: 14px;
-          }
-        }
-      </style>
+      }
+    </style>
   </head>
   <body>
-    
-    </head>
-    <body>
-      <div class="container">
-        <p>Brincadeira de criança</p>
-        <h2>Formulário de Contato</h2>
-        <form action="processa_formulario.php" method="post">
-          <div>
-            <label for="nome">Nome:</label>
-            <input type="text" id="nome" name="nome" required />
-          </div>
-          <div>
-            <label for="email">E-mail:</label>
-            <input type="email" id="email" name="email" required />
-          </div>
-          <div>
-            <label for="mensagem">Mensagem:</label>
-            <textarea
-              id="mensagem"
-              name="mensagem"
-              rows="4"
-              cols="50"
-              required
-            ></textarea>
-          </div>
-          <div><button type="submit">Enviar</button></div>
-        </form>
-      </div>
+    <div class="container">
+      <p>Brincadeira de criança</p>
+      <h2>Formulário de Contato</h2>
+      <form action="explosao.html" method="get">
+        <div>
+          <label for="nome">Nome:</label>
+          <input type="text" id="nome" name="nome" required />
+        </div>
+        <div>
+          <label for="email">E-mail:</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+        <div>
+          <label for="mensagem">Mensagem:</label>
+          <textarea
+            id="mensagem"
+            name="mensagem"
+            rows="4"
+            cols="50"
+            required
+          ></textarea>
+        </div>
+        <div><button type="submit">Enviar</button></div>
+      </form>
+    </div>
   </body>
 </html>
